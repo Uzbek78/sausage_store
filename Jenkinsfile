@@ -42,9 +42,7 @@ pipeline {
             }
             post {
                 success {
-                    curl -X POST -H 'Content-type: application/json' \
---data '{"chat_id": "850916633", "text": "Jeka собрал приложение." }' \
-https://api.telegram.org/bot7429036384:AAG-hGOvl3aafULpFA5MnHLXdhk3JF7xAIQ/sendMessage
+                    curl -X POST -H 'Content-type: application/json' --data '{"chat_id": "850916633", "text": "Jeka собрал приложение." }' https://api.telegram.org/bot7429036384:AAG-hGOvl3aafULpFA5MnHLXdhk3JF7xAIQ/sendMessage
                 }
             }
         }
